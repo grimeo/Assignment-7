@@ -67,11 +67,22 @@ def checkLen():
     return len(password)
 
 def hasCapital():
+    isUpper = False
     for x in password:
         if x.isupper():
             isUpper = True
+            break
         else:
             isUpper = False
     return isUpper
 
+def hasDigit():
+    hasDigit = False
+    for x in password:
+        if x.isdigit():
+            hasDigit = True
+        else:
+            hasDigit = False
+    return hasDigit
 
+def 
