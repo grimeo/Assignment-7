@@ -59,5 +59,6 @@ print("\n") #end of program 1
 
 # Tip: loop through each character of the input then process it letter by letter
 
-print("End of Program 1\nWelcome to Program 2 of Assignment 7!")
+print("End of Program 1\nWelcome to Program 2 of Assignment 7!\n")
 
+password = str(input = ("Type your password to valide: "))
