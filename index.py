@@ -63,11 +63,15 @@ print("End of Program 1\nWelcome to Program 2 of Assignment 7!\n")
 
 password = str(input("Type your password to valide: "))
 
+isUpper = False
+hasDigit = False
+hasSepecialChar = False
+
 def checkLen():
     return len(password)
 
+
 def hasCapital():
-    isUpper = False
     for x in password:
         if x.isupper():
             isUpper = True
@@ -77,7 +81,6 @@ def hasCapital():
     return isUpper
 
 def hasDigit():
-    hasDigit = False
     for x in password:
         if x.isdigit():
             hasDigit = True
@@ -85,8 +88,8 @@ def hasDigit():
             hasDigit = False
     return hasDigit
 
+
 def hasSpecialChar():
-    hasSepecialChar = False
     for x in password:
         if not x.isalnum():
             hasSepecialChar = True
