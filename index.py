@@ -70,7 +70,6 @@ b_hasSepecialChar = False
 def checkLen():
     return len(password)
 
-
 def hasCapital():
     for x in password:
         if x.isupper():
@@ -84,6 +83,7 @@ def hasDigit():
     for x in password:
         if x.isdigit():
             hasDigit = True
+            break
         else:
             hasDigit = False
     return hasDigit
@@ -93,6 +93,7 @@ def hasSpecialChar():
     for x in password:
         if not x.isalnum():
             hasSepecialChar = True
+            break
         else:
             hasSepecialChar = False
     return hasSepecialChar
