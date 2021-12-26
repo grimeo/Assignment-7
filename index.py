@@ -85,4 +85,11 @@ def hasDigit():
             hasDigit = False
     return hasDigit
 
-def 
+def hasSpecialChar():
+    hasSepecialChar = False
+    for x in password:
+        if not x.isalnum():
+            hasSepecialChar = True
+        else:
+            hasSepecialChar = False
+    return hasSepecialChar
