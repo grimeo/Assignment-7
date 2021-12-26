@@ -88,7 +88,6 @@ def hasDigit():
             hasDigit = False
     return hasDigit
 
-
 def hasSpecialChar():
     for x in password:
         if not x.isalnum():
@@ -99,4 +98,9 @@ def hasSpecialChar():
     return hasSepecialChar
 
 
-print(hasCapital())
+#---- main ---
+
+if (checkLen() > 15) and (hasCapital()==True) and (hasDigit()==True) and (hasSpecialChar()==True):
+    print("Your Password is valid.")
+else:
+    print("Your Password is not valid.")
