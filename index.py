@@ -61,7 +61,7 @@ print("\n") #end of program 1
 
 print("End of Program 1\nWelcome to Program 2 of Assignment 7!\n")
 
-password = str(input = ("Type your password to valide: "))
+password = str(input("Type your password to valide: "))
 
 def checkLen():
     return len(password)
@@ -93,3 +93,6 @@ def hasSpecialChar():
         else:
             hasSepecialChar = False
     return hasSepecialChar
+
+
+print(hasSpecialChar())
