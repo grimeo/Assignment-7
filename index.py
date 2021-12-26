@@ -63,9 +63,9 @@ print("End of Program 1\nWelcome to Program 2 of Assignment 7!\n")
 
 password = str(input("Type your password to valide: "))
 
-isUpper = False
-hasDigit = False
-hasSepecialChar = False
+b_isUpper = False
+b_hasDigit = False
+b_hasSepecialChar = False
 
 def checkLen():
     return len(password)
